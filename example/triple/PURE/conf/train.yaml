@@ -10,13 +10,13 @@ entity_eval_test: True
 entity_single_card: False
 entity_learning_rate: 1e-05
 entity_task_learning_rate: 5e-04
-entity_train_batch_size: 64
+entity_train_batch_size: 32
 entity_num_epoch: 60
 entity_context_window: 300
 entity_output_dir: 'pretrain_models/ent-cmeie-ctx0/'
 entity_test_pred_filename: 'ent_pred_test.json'
 entity_dev_pred_filename: 'ent_pred_dev.json'
-entity_eval_batch_size: 64
+entity_eval_batch_size: 32
 entity_eval_per_epoch: 1
 entity_bert_model_dir: 
 entity_bertadam: False
@@ -36,8 +36,8 @@ relation_do_eval: True
 relation_eval_test: True
 relation_do_lower_case: True
 relation_single_card: False
-relation_train_batch_size: 64
-relation_eval_batch_size: 64
+relation_train_batch_size: 32
+relation_eval_batch_size: 32
 relation_learning_rate: 2e-5
 relation_num_train_epochs: 3
 relation_context_window: 0
